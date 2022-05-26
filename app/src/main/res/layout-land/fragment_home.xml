@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="1.5sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="-55dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora de IMC por Alondra Cordoba, 191286"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su peso (kg)"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtKg"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su altura (m)"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtMt"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/imcds"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:text="Su IMC:"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtIMC"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/imcds2"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:text="Su Categoria:"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txttypeImc"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:backgroundTint="@color/teal_700"
+            android:onClick="imc"
+            android:text="Calcular"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
