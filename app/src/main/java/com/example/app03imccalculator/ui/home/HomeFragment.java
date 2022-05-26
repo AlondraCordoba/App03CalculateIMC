@@ -93,7 +93,7 @@ public class HomeFragment extends Fragment {
                 type.setText("OBESIDAD CLASE I (moderadablente obeso)");
             }else if(imcCalculate > 35 && imcCalculate <= 40){
                 type.setText("OBESIDAD CLASE II (severamente obeso)");
-            } else if(imcCalculate > 30 && imcCalculate <= 35){
+            } else if(imcCalculate > 40){
                 type.setText("OBESIDAD CLASE III (obesidad morbida)");
             }
         }
